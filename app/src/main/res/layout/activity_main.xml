@@ -15,7 +15,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:textSize="32dp"
+        />
 
     <TextView
         android:id="@+id/callToAction"
@@ -25,7 +27,8 @@
         android:text="Descubra seu índice de massa corpórea"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headerTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/headerTitle"
+        android:textSize="20dp"/>
 
     <EditText
         android:id="@+id/idade"
@@ -61,6 +64,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+
             android:text="Peso(kg)"/>
         <TextView
             android:layout_width="0dp"
@@ -117,7 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Seu IMC É {IMC}"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
