@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import java.math.BigDecimal
 
 class MainActivity: AppCompatActivity() {
     lateinit var nome: EditText
@@ -28,9 +29,34 @@ class MainActivity: AppCompatActivity() {
         feedbackMessage = findViewById<EditText>(R.id.imcFinalResult)
 
         botaoCalcular.setOnClickListener(){
-            feedbackMessage.setText("o nome é ${nome.text}")
-            numberResult.setText("47")
+            val alturaInput = altura.text.toString().toDouble() / 100
+            val pesoInput = peso.text.toString().toDouble()
+            var imc: Double = pesoInput / (alturaInput * alturaInput)
+
+            when(imc){
+                in 0.0 ..18.4 -> {
+                    feedbackMessage.setText("Você está abaixo do peso normal")
+                }
+                in 18.5..24.9 ->{
+                    feedbackMessage.setText("Você está no peso normal")
+                }
+                in 25.0..29.9 -> {
+                    feedbackMessage.setText("Você está com excesso de peso")
+                }
+                in 30.0.. 34.9 -> {
+                    feedbackMessage.setText("Você está em obesidade classe I")
+                }
+                in 35.0..39.9 ->{
+                    feedbackMessage.setText("Você está em obesidade classe II")
+                }
+                else->{
+                    feedbackMessage.setText("Você está em obesidade classe III")
+                }
+            }
+
+            numberResult.setText(String.format("%.1f", imc.toDouble()))
         }
+
     }
 
 

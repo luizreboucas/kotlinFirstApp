@@ -36,7 +36,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Idade"
+        android:text=""
+        android:hint="Idade"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +50,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Nome"
+        android:text=""
+        android:hint="Nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/callToAction" />
@@ -90,7 +92,8 @@
             android:width="0dp"
             android:ems="10"
             android:inputType="number"
-            android:text="Peso" />
+            android:text=""
+            android:hint="Peso"/>
         <EditText
             android:id="@+id/altura"
             android:layout_width="match_parent"
@@ -99,7 +102,8 @@
             android:width="0dp"
             android:ems="10"
             android:inputType="number"
-            android:text="altura" />
+            android:text=""
+            android:hint="Altura"/>
 
 
 
@@ -121,7 +125,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="46"
+        android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +136,7 @@
         android:id="@+id/imcFinalResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mensagem de feedback"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
