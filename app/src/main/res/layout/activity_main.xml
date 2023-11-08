@@ -121,11 +121,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text=""
+        android:text="46"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
+        android:textSize="50sp"/>
 
     <TextView
         android:id="@+id/imcFinalResult"
@@ -135,6 +136,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imcNumberResult" />
+        app:layout_constraintTop_toBottomOf="@+id/imcNumberResult"
+        android:textSize="32sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
